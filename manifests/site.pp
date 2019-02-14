@@ -12,7 +12,7 @@ node 'master.puppet.vm' {
 }
 
 node 'mine.puppet.vm' {
-    include::mine_server
+    include role::mine_server
 }
 
 node /^ssh/ {
