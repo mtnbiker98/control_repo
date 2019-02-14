@@ -11,6 +11,10 @@ node 'master.puppet.vm' {
     }
 }
 
+node /^ssh/ {
+    include role::ssh_server
+}   
+
 node /^web/ {
     include role::app_server
 }
