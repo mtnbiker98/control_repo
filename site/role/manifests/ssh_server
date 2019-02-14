@@ -1,3 +1,0 @@
-role profile::ssh_server{
-  include 
-}
