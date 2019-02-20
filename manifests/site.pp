@@ -2,6 +2,13 @@ node default {
 
 }
 
+node 'win10' {
+    file {'c:\README.txt'
+            ensure => file, 
+            content => "Hello World",
+        }
+}
+
 node 'master.puppet.vm' {
     include role::master_server
         file {'/root/README':
