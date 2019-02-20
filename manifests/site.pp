@@ -3,7 +3,7 @@ node default {
 }
 
 node 'win10' {
-    file {'c:\README.txt'
+    file {'c:\README.txt':
             ensure => file, 
             content => "Hello World",
         }
