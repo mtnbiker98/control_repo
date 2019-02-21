@@ -1,6 +1,6 @@
 class profile::windows10_desktop{
   service{'AppVClient':
-          ensure=>'Running',
+          ensure=>'running',
           enable=>true,
          }
 }
