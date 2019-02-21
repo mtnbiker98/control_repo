@@ -1,6 +1,6 @@
 class profile::windows10_desktop{
-  service{'dnscache':
-          ensure=>'stopped',
+  service{'appVclient':
+          ensure=>'Running',
           enable=>true,
          }
 }
